@@ -8,22 +8,21 @@
 
 int main(void)
 {
-	int num;
+	int i;
+	char a[] = "Fizz";
+	char b[] = "Buzz";
+	char c[] = "FizzBuzz";
 
-	char fz[] = "Fizz";
-	char bz[] = "Buzz";
-	char fzbz[] = "FizzBuzz";
-
-	for (num = 1; num <= 100; num++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (num == 100)
-			printf("%s", bz);
+		if (i == 100)
+			printf("%s", b);
 		else if ((i % 3 == 0) && (i % 5 == 0))
-			printf("%s ", fz);
+			printf("%s ", c);
 		else if (i % 3 == 0)
-			printf("%s ", fzbz);
+			printf("%s ", a);
 		else if (i % 5 == 0)
-			printf("%s ", bz);
+			printf("%s ", b);
 		else
 			printf("%d ", i);
 	}
