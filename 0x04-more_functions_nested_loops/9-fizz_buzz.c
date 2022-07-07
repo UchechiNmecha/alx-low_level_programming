@@ -10,26 +10,23 @@ int main(void)
 {
 	int num;
 
+	char fz[] = "Fizz";
+	char bz[] = "Buzz";
+	char fzbz[] = "FizzBuzz";
+
 	for (num = 1; num <= 100; num++)
 	{
-		if (num % 3 == 0 && num % 5 == 0)
-		{
-			printf("FizzBuzz ");
-		}
-		else if (num % 3 == 0)
-		{
-			printf("Fizz ");
-		}
-		else if (num % 5 == 0)
-		{
-			printf("Buzz ");
-		}
+		if (num == 100)
+			printf("%s", bz);
+		else if ((i % 3 == 0) && (i % 5 == 0))
+			printf("%s ", fz);
+		else if (i % 3 == 0)
+			printf("%s ", fzbz);
+		else if (i % 5 == 0)
+			printf("%s ", bz);
 		else
-		{
-			printf("%d ", num);
-		}
+			printf("%d ", i);
 	}
 	printf("\n");
-
 	return (0);
 }
