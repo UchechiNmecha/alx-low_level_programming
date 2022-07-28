@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stlib.h>
 
 /**
  * array_range - Entry point, a function that creates an array of integers
