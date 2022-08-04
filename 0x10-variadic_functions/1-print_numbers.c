@@ -20,13 +20,12 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		for (i = 0; i < n; i++)
 			printf("%s%d", separator, va_arg(nums, int));
 		va_end(nums);
-		printf("\n");
 	}
 	else
 	{
 		for (i = 0; i < n; i++)
 			printf("%d", va_arg(nums, int));
 		va_end(nums);
-		printf("\n");
 	}
+	printf("\n");
 }
